@@ -5,6 +5,9 @@ seaborn
 matplotlib
 scikit-learn
 dill
+catboost
+xgboost
+
 
 # -e .
 # comment this out if dont want to build package every time (while compiling requiremnts.txt)
