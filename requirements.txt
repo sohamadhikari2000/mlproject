@@ -1,14 +1,13 @@
-pandas
-numpy 
-ipykernel
-seaborn 
-matplotlib
-scikit-learn
-dill
-catboost
-xgboost
-flask
+flask==3.0.3
+gunicorn==22.0.0
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+seaborn==0.13.2
+scikit-learn==1.4.2
+dill==0.3.8
+catboost==1.2.5
+xgboost==2.0.3
 
-
--e .
+# -e .
 # comment this out if dont want to build package every time (while compiling requiremnts.txt)
