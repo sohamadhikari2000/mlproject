@@ -7,7 +7,7 @@ class PredictPipeline:
     def __init__(self):
         pass
 
-    def predict(self,features):   
+    def predict(self,features):     
         try:
             model_path = "artifacts\model.pkl"
             preprocessor_path = "artifacts\preprocessor.pkl"
@@ -17,7 +17,7 @@ class PredictPipeline:
             preds = model.predict(data_scaled)
             return preds
         except Exception as e:
-            return CustomException(e,sys)
+            raise CustomException(e,sys)
 
 
   
@@ -55,4 +55,4 @@ class CustomData:
 
             return pd.DataFrame(custom_data_input_dict)
         except Exception as e:
-            return CustomException(e,sys)
+            raise CustomException(e,sys)
