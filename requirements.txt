@@ -10,5 +10,5 @@ xgboost
 flask
 
 
--e .
+# -e .
 # comment this out if dont want to build package every time (while compiling requiremnts.txt)
